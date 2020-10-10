@@ -27,7 +27,6 @@ Base.prepare(engine, reflect=True)
 Dataset = Base.classes.dataset
 
 
-
 #################################################
 # Flask Setup
 #################################################
@@ -46,6 +45,17 @@ def welcome():
         f"/api/v1.0/name<br/>"
         f"/api/v1.0/primary_fuel"
     )
+
+@app.route("/api/v1.0/name")
+def names():
+
+    session = Session(engine)
+    results = session.query(Dataset.name).all()
+    session.close()
+    all_names = list(np.ravel(results))
+    return jsonify(all_names)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
