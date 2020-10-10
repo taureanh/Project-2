@@ -12,7 +12,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: API_KEY
 }).addTo(myMap);
 
-var url = "https://taureanh.github.io/geojson/";
+var url = "USA.geojson";
 
 d3.json(url, function(response) {
 

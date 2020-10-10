@@ -1,6 +1,6 @@
 var myMap = L.map("map", {
-  center: [37.7749, -122.4194],
-  zoom: 13
+  center: [39.0119, -98.4842],
+  zoom: 5
 });
 
 // Adding tile layer
@@ -13,18 +13,30 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: API_KEY
 }).addTo(myMap);
 
-var url = "https://taureanh.github.io/geojson/";
+var url = "USA.geojson";
 
 d3.json(url, function(response) {
 
   console.log(response);
 
+
+// $.getJSON("https://taureanh.github.io/geojson/", function(json) {
+//     console.log(json); 
+
+
+/* $.getJSON("https://taureanh.github.io/geojson/")
+    .done(function( data ) {
+       console.log(data); */
+
+
   for (var i = 0; i < response.length; i++) {
     var geometry = response[i].geometry;
 
     if (geometry) {
-      L.marker([geomtery.coordinates[1], geometry.coordinates[0]]).addTo(myMap);
+      L.marker([geometry.coordinates[1], geometry.coordinates[0]]).addTo(myMap);
     }
   }
 
 });
+
+
