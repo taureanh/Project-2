@@ -17,7 +17,7 @@ var url = "USA.geojson";
 
 d3.json(url, function(response) {
 
-  console.log(response);
+  console.log(response.features[1].geometry.coordinates);
 
 
 // $.getJSON("https://taureanh.github.io/geojson/", function(json) {
@@ -29,13 +29,14 @@ d3.json(url, function(response) {
        console.log(data); */
 
 
-  for (var i = 0; i < response.length; i++) {
-    var geometry = response[i].geometry;
+       for (var i = 0; i < response.features.length; i++) {
+        var geometry1 = response.features[i];
+        // console.log(geometry1.geometry.coordinates)
+        if (geometry1) {
+          L.marker([geometry1.geometry.coordinates[1], geometry1.geometry.coordinates[0]]).addTo(myMap);
+        }
+      }
 
-    if (geometry) {
-      L.marker([geometry.coordinates[1], geometry.coordinates[0]]).addTo(myMap);
-    }
-  }
 
 });
 
