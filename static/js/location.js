@@ -16,7 +16,8 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var url = "USA.geojson";
 
 d3.json(url, function(response) {
-
+  // console.log(response.features[1].properties.capacity_mw);
+  // console.log(response);
   console.log(response.features[1].geometry.coordinates);
 
 
@@ -33,7 +34,13 @@ d3.json(url, function(response) {
         var geometry1 = response.features[i];
         // console.log(geometry1.geometry.coordinates)
         if (geometry1) {
-          L.marker([geometry1.geometry.coordinates[1], geometry1.geometry.coordinates[0]]).addTo(myMap);
+          L.marker([geometry1.geometry.coordinates[1], geometry1.geometry.coordinates[0]])
+          .bindPopup("<h2>" + geometry1.properties.name + "<h2> <hr> <h3>Primary Fuel " + geometry1.properties.primary_fuel + "</h3>")
+          .addTo(myMap);
+
+
+
+
         }
       }
 

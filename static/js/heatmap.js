@@ -1,6 +1,6 @@
 var myMap = L.map("map", {
-  center: [37.7749, -122.4194],
-  zoom: 13
+  center: [39.0119, -98.4842],
+  zoom: 5
 });
 
 L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
@@ -15,22 +15,23 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var url = "USA.geojson";
 
 d3.json(url, function(response) {
-
-  console.log(response);
-
+  console.log(response.features[1].geometry.coordinates);
+  // console.log(response);
+  
   var heatArray = [];
 
-  for (var i = 0; i < response.length; i++) {
-    var geometry = response[i].geometry;
+  for (var i = 0; i < response.features.length; i++) {
+    var geometry1 = response.features[i];
 
-    if (geometry) {
-      heatArray.push([geometry.coordinates[1], geometry.coordinates[0]]);
+    if (geometry1) {
+      heatArray.push([geometry1.geometry.coordinates[1], geometry1.geometry.coordinates[0]]);
     }
   }
 
   var heat = L.heatLayer(heatArray, {
     radius: 20,
-    blur: 35
+    blur: 3
   }).addTo(myMap);
+  
 
 });
