@@ -1,0 +1,11 @@
+Project 2 Notes:
+
+Js library: http://parsleyjs.org/doc/examples/simple.html
+		parsleyjs.org
+Parsley - Examples | Simple form demo
+Parsley, the ultimate frontend javascript form validation library
+
+Or Googlefonts: https://fonts.google.com/ (edited) 
+fonts.google.comfonts.google.com
+Google Fonts
+Making the web more beautiful, fast, and open through great typography (18 kB)Project
