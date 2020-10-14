@@ -37,23 +37,41 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 
+
 @app.route("/")
 def welcome():
-    """List all available api routes."""
-    return (
-        f"Available Routes:<br/>"
-        f"/api/v1.0/name<br/>"
-        f"/api/v1.0/primary_fuel"
-    )
+    """Return the homepage."""
+    return render_template("index.html")
 
-@app.route("/api/v1.0/name")
-def names():
 
-    session = Session(engine)
-    results = session.query(Dataset.name).all()
-    session.close()
-    all_names = list(np.ravel(results))
-    return jsonify(all_names)
+@app.route("/hydro")
+def comparison():
+    """Return dashboard.html."""
+    return render_template("hydro.html")
+
+@app.route("/hydro")
+def map():
+    """Return dashboard.html."""
+    return render_template("wind.html")
+
+
+# @app.route("/")
+# def welcome():
+#     """List all available api routes."""
+#     return (
+#         f"Available Routes:<br/>"
+#         f"/api/v1.0/name<br/>"
+#         f"/api/v1.0/primary_fuel"
+#     )
+
+# @app.route("/api/v1.0/name")
+# def names():
+
+#     session = Session(engine)
+#     results = session.query(Dataset.name).all()
+#     session.close()
+#     all_names = list(np.ravel(results))
+#     return jsonify(all_names)
 
 
 
