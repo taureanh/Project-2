@@ -33,6 +33,7 @@ def renewable_scrape():
     print ("Current date and time : ")
     last_refresh = now.strftime("%Y-%m-%d %H:%M:%S")
 
+    ##This Line
     renewables.update({"renewable_refresh": last_refresh })
 
     for x in range (5):
@@ -44,8 +45,11 @@ def renewable_scrape():
         title = link_[x].find('h2', class_='post-list-item__title').find('a').text
         link_list.append(link)
         title_list.append(title)
+
+        ##These two lines
         renewables.update({"renewable_links": link_list })
         renewables.update({"renewable_titles": title_list })
+        
         now = datetime.datetime.now()
         print ("Current date and time : ")
         last_refresh = now.strftime("%Y-%m-%d %H:%M:%S")
