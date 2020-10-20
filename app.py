@@ -33,6 +33,10 @@ Dataset = Base.classes.dataset
 #################################################
 app = Flask(__name__)
 
+SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+json_url = os.path.join(SITE_ROOT, "templates", "USA.geojson")
+heatmapdata = json.load(open(json_url))
+print(heatmapdata)
 
 #################################################
 # Flask Routes
@@ -79,6 +83,15 @@ def sunburst():
     data =  json.load(open("my_renewables.json","r")) 
     return render_template("webscrape_sunburst.html",r_last_refresh=data["last_scrape"],renewable_title_0=data["articles "][0],renewable_link_0=data["links"][0],renewable_title_1=data["articles "][1],renewable_link_1=data["links"][2], renewable_title_2 = data["articles "][2],renewable_link_2=data["links"][4],renewable_title_3=data["articles "][3],renewable_link_3=data["links"][6])
 
+@app.route("/api/heatmap")
+def heatmapgeojson():
+    return jsonify(data = heatmapdata)
+
+
+@app.route("/data")
+def data():
+    """Return dashboard.html."""
+    return render_template("data.html")
 
 
 if __name__ == '__main__':
