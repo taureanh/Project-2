@@ -17,7 +17,7 @@ print(last_refresh)
 renewables.update({"renewable_refresh": last_refresh })
 
 def renewable_scrape():
-    executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+    executable_path = {'executable_path': 'C:\Windows\System32\chromedriver'}
     browser = Browser('chrome', **executable_path, headless=False)
     url = "https://www.renewableenergyworld.com"
     #base_url = "https://www.renewableenergyworld.com"

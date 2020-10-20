@@ -41,13 +41,12 @@ app = Flask(__name__)
 
 @app.route("/") 
 def welcome():
-
     return render_template("index.html")
 
 @app.route("/scrape")
 def scrape():
     renewable_scrape.renewable_scrape()
-    return redirect("/")
+    return redirect("/sunburst")
 
 @app.route("/hydro")
 def hydro():
@@ -62,7 +61,7 @@ def wind():
 
 @app.route("/heatmap")
 def heatmap():
-    """Return dashboard.html."""
+    
     return render_template("heatmap.html")
 
 @app.route("/solar")
@@ -73,18 +72,13 @@ def solar():
 @app.route("/location")
 def location():
     """Return dashboard.html."""
-    return render_template("templates/location.html")
+    return render_template("location.html")
 
 @app.route("/sunburst")
 def sunburst():
     data =  json.load(open("my_renewables.json","r")) 
-
-    print(data["last_scrape"])
-
-    print("Read Json")
-    # data = mongo.db.renewables.find_one()
     return render_template("webscrape_sunburst.html",r_last_refresh=data["last_scrape"],renewable_title_0=data["articles "][0],renewable_link_0=data["links"][0],renewable_title_1=data["articles "][1],renewable_link_1=data["links"][2], renewable_title_2 = data["articles "][2],renewable_link_2=data["links"][4],renewable_title_3=data["articles "][3],renewable_link_3=data["links"][6])
-    # return render_template("templates/sunburst.html")
+
 
 
 if __name__ == '__main__':
