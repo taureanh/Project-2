@@ -80,11 +80,15 @@
             </ul>
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Interactive Suburst Plot of US Energy Resources</h1>
+            </div>
 
 
 
-
-    <!-- <body>
+            <!-- <body>
 
         <div class="container">
             <div class="row">
@@ -95,35 +99,35 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-5"> -->
-    <div id="sunburst"></div>
+            <div id="sunburst"></div>
 
-    <div class="col-md-5">
+            <div class="col-md-5">
 
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div>
-                Last Refresh: {{r_last_refresh}}
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="{{ renewable_link_0 }}">{{ renewable_title_0 }}</a>
-                    </li>
-                    <li>
-                        <a href="{{ renewable_link_1 }}">{{ renewable_title_1 }}</a>
-                    </li>
-                    <li>
-                        <a href="{{ renewable_link_2 }}">{{ renewable_title_2 }}</a>
-                    </li>
-                    <li>
-                        <a href="{{ renewable_link_3 }}">{{ renewable_title_3 }}</a>
-                    </li>
-                </ul>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    Last Refresh: {{r_last_refresh}}
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="{{ renewable_link_0 }}">{{ renewable_title_0 }}</a>
+                        </li>
+                        <li>
+                            <a href="{{ renewable_link_1 }}">{{ renewable_title_1 }}</a>
+                        </li>
+                        <li>
+                            <a href="{{ renewable_link_2 }}">{{ renewable_title_2 }}</a>
+                        </li>
+                        <li>
+                            <a href="{{ renewable_link_3 }}">{{ renewable_title_3 }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
