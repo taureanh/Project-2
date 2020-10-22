@@ -62316,7 +62316,6 @@ var myIcon2 = L.icon({
   // shadowSize: [68, 95],
   // shadowAnchor: [22, 94]
 });
-
 // create groups to add the markers
 var solarGroup = L.featureGroup().addTo(map);
 var hydroGroup = L.featureGroup().addTo(map);
@@ -62349,3 +62348,5 @@ var overlayMaps = {
 	"Wind": windGroup
 }
 L.control.layers(null, overlayMaps).addTo(map);
+
+
