@@ -11,11 +11,21 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
 
+
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../static/css/leaflet.extra-markers.min.css">
+
+    <title>Heatmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/76c400baa8.js" crossorigin="anonymous"></script>
+
     <!-- Our CSS  -->
     <link rel="stylesheet" href="../static/css/style.css" />
-    <link rel="stylesheet" href="./style.css" />
 
-    <title>Solar</title>
+
+    <title>Heatmap</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/76c400baa8.js" crossorigin="anonymous"></script>
@@ -23,49 +33,52 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand h1 goofy_blue" href="/">
-            <h1>Renewable Energy</h1>
-        </a>
+        <a class="navbar-brand h1 goofy_blue" href="#">"Renewable Energy"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
+                    <a class="dropdown-item" href="index.html">
+                        Home
+                        <i class="fas fa-home"></i>
+                </li>
+                <li class="nav-item active">
                     <a class="dropdown-item" href="/solar">
-            solar
-            <i class="fas fa-sun"></i>
-          </a>
+                        Solar
+                        <i class="fas fa-sun"></i>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="dropdown-item" href="/hydro">
-            hydroelectric
-            <i class="fas fa-water"></i>
-          </a>
+                        Hydroelectric
+                        <i class="fas fa-water"></i>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="dropdown-item" href="/location">
-            location
-            <i class="fas fa-map-marker"></i>
-          </a>
+                        Location
+                        <i class="fas fa-map-marker"></i>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="dropdown-item" href="/wind">
-            wind
-            <i class="fas fa-wind"></i>
-          </a>
+                        Wind
+                        <i class="fas fa-wind"></i>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="dropdown-item" href="/heatmap">
-            heatmap
-            <i class="fas fa-thermometer-half"></i>
-          </a>
+                        Heatmap
+                        <i class="fas fa-thermometer-half"></i>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="dropdown-item" href="/sunburst">
-            sunburst
-            <i class="fas fa-meteor"></i>
-          </a>
+                        Sunburst
+                        <i class="fas fa-meteor"></i>
+                    </a>
                 </li>
 
             </ul>
@@ -103,4 +116,3 @@
 </body>
 
 </html>
-
