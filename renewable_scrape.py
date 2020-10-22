@@ -56,7 +56,6 @@ def renewable_scrape():
     last_refresh = now.strftime("%Y-%m-%d %H:%M:%S")
         # renewables.update({"renewable_refresh": last_refresh })
     renewables = {"links": link_list, "articles ": title_list, "last_scrape": last_refresh}
-
+    browser.quit()
     out_file = open("my_renewables.json", "w") 
-  
     json.dump(renewables, out_file, indent = 6) 
