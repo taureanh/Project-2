@@ -1,4 +1,4 @@
-# Project-2
+# Renewable Energy Production
 
 # Project deployed on AWS at http://18.189.31.33:5000
 
