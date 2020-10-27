@@ -20,7 +20,7 @@ Visualizations made:
 Heatmap,
 Choropleth Maps,
 Sunburst,
-Webscraping,
+Webscraping.
 
 
 Data Sources: https://www.energy.gov/science-innovation/energy-sources/renewable-energy/water,
