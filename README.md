@@ -23,6 +23,6 @@ Sunburst\
 Webscraping.
 
 
-Data Sources: https://www.energy.gov/science-innovation/energy-sourcesrenewable-energy/water\
+Data Sources: https://www.energy.gov/science-innovation \
               https://www.eia.gov/electricity/data/browser/#/topic/0?agg=1,0,2&fuel=004&geo=qnifi05c03j78&sec=o3g&linechart=ELEC.GEN.SUN-US-99.M~ELEC.GEN.SUN-NV-99.M~ELEC.GEN.SUN-CA-99.M&columnchart=ELEC.GEN.SUN-US-99.M~ELEC.GEN.SUN-NV-99.M~ELEC.GEN.SUN-CA-99.M&map=ELEC.GEN.SUN-US-99.M&freq=M&start=200101&end=202007&ctype=linechart&ltype=sourcekey&rtype=s&maptype=0&rse=0&pin=\
               https://www.sciencedaily.com/news/earth_climate/renewable_energy.
