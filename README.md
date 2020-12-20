@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The objective of this project was to find particular data on a topic of interest and to use different web development software to create a variety of visualizations that will tell a story through using data in our database on Renewable Energy Resource Production in the US.
+The objective of this project was to find particular data on a topic of interest and to use different web development software to create a variety of visualizations that will tell a story through using data in our database on Renewable Energy Resource Production in the US. We also created a webscraping function that gives you the latest news in regards to renewable energy.
 
 ## Programs used: 
 Javascript\
