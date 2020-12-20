@@ -19,9 +19,15 @@ Leaflet.
 Visualizations made:\
 Heatmap\
 Choropleth Maps\
+
+![](static/images/pic1.png)
+
 Sunburst\
+![](static/images/pic2.png)
+
 Webscraping.
 
+![](static/images/pic3.png)
 
 Data Sources: \
 https://www.energy.gov/science-innovation \
