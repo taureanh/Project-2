@@ -18,14 +18,16 @@ Leaflet.
 
 Visualizations made:\
 Heatmap\
-Choropleth Maps
+Choropleth Maps\
+Sunburst\
+Webscraping
+
 
 ![](static/images/pic1.png)
 
-Sunburst
+
 ![](static/images/pic2.png)
 
-Webscraping.
 
 ![](static/images/pic3.png)
 
