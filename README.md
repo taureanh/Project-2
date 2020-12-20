@@ -25,7 +25,7 @@ Choropleth Maps\
 Sunburst\
 ![](static/images/pic2.png)
 
-Webscraping.
+Webscraping..
 
 ![](static/images/pic3.png)
 
