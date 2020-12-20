@@ -41,7 +41,7 @@ https://www.sciencedaily.com/news/earth_climate/renewable_energy.
 
 
 ## Requirements to run the app on the local machine
-download entire folder\
+Download entire folder\
 Run app.py\
 Access at local host http://127.0.0.1:5000/
 
