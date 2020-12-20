@@ -6,7 +6,7 @@
 
 The objective of this project was to find particular data on a topic of interest and to use different web development software to create a variety of visualizations that will tell a story through using data in our database on Renewable Energy Resource Production in the US.
 
-## Programs used:\
+## Programs used: \
 Javascript\
 HTML\
 Pandas\
@@ -17,7 +17,7 @@ Python\
 Mapbox\
 Leaflet.
 
-## Visualizations made:\
+## Visualizations made: \
 Heatmap\
 Choropleth Maps\
 Sunburst\
