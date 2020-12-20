@@ -20,8 +20,8 @@ Leaflet.
 ## Visualizations made: 
 Heatmap\
 Choropleth Maps\
-Sunburst\
-Webscraping
+Sunburst
+
 
 
 ![](static/images/pic1.png)
@@ -29,6 +29,8 @@ Webscraping
 
 ![](static/images/pic2.png)
 
+## Additional Components
+Webscraping
 
 ![](static/images/pic3.png)
 
