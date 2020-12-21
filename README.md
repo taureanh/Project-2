@@ -41,8 +41,8 @@ The objective of this project was to find particular data on a topic of interest
 
 
 ## Requirements to run the app on the local machine
-* Download entire folder\
-* Run app.py\
+* Download entire folder
+* Run app.py
 * Access at local host http://127.0.0.1:5000/
 
 
